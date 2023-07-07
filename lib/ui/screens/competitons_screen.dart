@@ -5,6 +5,7 @@ import 'package:pingpong/ui/widgets/competition_card.dart';
 import 'package:pingpong/ui/widgets/current_competiton_card.dart';
 import 'package:pingpong/ui/widgets/custom_appbar.dart';
 import 'package:pingpong/ui/widgets/header_text.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class CompetitonsScreen extends StatefulWidget {
   const CompetitonsScreen({super.key});
@@ -21,8 +22,8 @@ class _CompetitonsScreenState extends State<CompetitonsScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: const CustomAppbar(
-        leading_icon: Icon(Icons.sort, color: Colors.black),
-        action_icon: Icon(Icons.event_outlined, color: Colors.black),
+        leading_icon: Icon(Icons.sort, color: Constants.text_color),
+        action_icon: Icon(Icons.event_outlined, color: Constants.text_color),
       ),
       body: SingleChildScrollView(
         child: Column(

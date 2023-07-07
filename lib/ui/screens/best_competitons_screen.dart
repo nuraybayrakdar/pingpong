@@ -4,6 +4,7 @@ import 'package:pingpong/ui/widgets/custom_appbar.dart';
 import 'package:pingpong/ui/widgets/header_text.dart';
 import 'package:pingpong/ui/widgets/leader_board.dart';
 import 'package:pingpong/ui/widgets/player_info.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class BestCompetitionsScreen extends StatefulWidget {
   const BestCompetitionsScreen({super.key});
@@ -20,14 +21,14 @@ class _BestCompetitionsScreenState extends State<BestCompetitionsScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: const CustomAppbar(
-        action_icon: Icon(Icons.search_outlined, color: Colors.black),
+        action_icon: Icon(Icons.search_outlined, color: Constants.text_color),
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFFFFE6D6),
-              Color(0xFFF7E7FF),
+              Constants.secondary_color,
+              Constants.primary_color,
             ],
             begin: Alignment.topLeft,
             end: Alignment.topRight,

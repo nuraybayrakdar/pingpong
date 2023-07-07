@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class CurrentCompetitonCard extends StatelessWidget {
   final String profile_photo1;
@@ -24,7 +25,7 @@ class CurrentCompetitonCard extends StatelessWidget {
       height: height / 3.3,
       margin: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color(0xFFF7E7FF),
+        color: Constants.primary_color,
         borderRadius: BorderRadius.circular(50),
       ),
       child: Column(
@@ -56,7 +57,7 @@ class CurrentCompetitonCard extends StatelessWidget {
                 'vs',
                 style: GoogleFonts.montserrat(
                   fontSize: 16,
-                  color: const Color(0xFFA62EE2),
+                  color: Constants.primary_dark_color,
                 ),
               ),
               Column(
@@ -86,7 +87,6 @@ class CurrentCompetitonCard extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 20),
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Text(
@@ -94,7 +94,7 @@ class CurrentCompetitonCard extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(
                     fontSize: 12,
-                    color: Colors.black,
+                    color: Constants.text_color,
                     fontWeight: FontWeight.w500),
               )),
         ],

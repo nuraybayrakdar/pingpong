@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pingpong/models/player.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class PlayerInfo extends StatelessWidget {
   final Player player;
@@ -38,7 +39,7 @@ class PlayerInfo extends StatelessWidget {
               Text(
                 '${player.wins} wins -  ${player.losses} losses',
                 style: GoogleFonts.montserrat(
-                    fontSize: 12, color: const Color(0xFFA62EE2)),
+                    fontSize: 12, color: Constants.primary_dark_color),
               ),
             ],
           ),
@@ -48,7 +49,7 @@ class PlayerInfo extends StatelessWidget {
             height: 28,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Color(0xFFF7E7FF),
+              color: Constants.primary_color,
             ),
             child: Center(
               child: Text(
@@ -56,7 +57,7 @@ class PlayerInfo extends StatelessWidget {
                 style: GoogleFonts.montserrat(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Constants.text_color,
                 ),
               ),
             ),

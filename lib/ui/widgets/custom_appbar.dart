@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final double appbar_height = 56.0;
@@ -14,7 +15,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Constants.transparent_color,
       elevation: 0,
       leading: Padding(
         padding: const EdgeInsets.only(left: 10),

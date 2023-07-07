@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pingpong/models/competition.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class CompetitonCard extends StatelessWidget {
   final Competition competition;
@@ -19,7 +20,7 @@ class CompetitonCard extends StatelessWidget {
         Container(
           margin: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: const Color(0xFFFFF4F4),
+            color: Constants.secondary_light_color,
             borderRadius: BorderRadius.circular(30),
           ),
           child: SizedBox(

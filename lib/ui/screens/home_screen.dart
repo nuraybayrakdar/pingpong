@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pingpong/bloc/bottom_navbar_bloc.dart';
 import 'package:pingpong/bloc/bottom_navbar_event.dart';
 import 'package:pingpong/ui/widgets/navbar.dart';
+import 'package:pingpong/utils/constants.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -25,8 +26,8 @@ class HomeScreen extends StatelessWidget {
               BlocProvider.of<BottomNavbarBloc>(context)
                   .add(TabSelectedEvent(index));
             },
-            unselectedItemColor: const Color.fromARGB(255, 181, 137, 199),
-            selectedItemColor: Colors.black,
+            unselectedItemColor: Constants.primary_dark_color,
+            selectedItemColor: Constants.text_color,
             backgroundColor: Colors.white,
             showUnselectedLabels: false,
             showSelectedLabels: false,
