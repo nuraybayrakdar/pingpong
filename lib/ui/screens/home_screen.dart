@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pingpong/bloc/bottom_navbar_bloc.dart';
 import 'package:pingpong/bloc/bottom_navbar_event.dart';
-import 'package:pingpong/ui/widgets/build_content.dart';
+import 'package:pingpong/ui/widgets/navbar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

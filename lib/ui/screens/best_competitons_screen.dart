@@ -39,7 +39,7 @@ class _BestCompetitionsScreenState extends State<BestCompetitionsScreen> {
             children: [
               const SizedBox(height: 80),
               const HeaderText(data: "Best\nChampions"),
-              const LeaderBoard(),
+              LeaderBoard(),
               Container(
                 height: height / 2.2,
                 margin: const EdgeInsets.only(top: 20),

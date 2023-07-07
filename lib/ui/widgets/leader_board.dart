@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pingpong/data/player_data.dart';
+import 'package:pingpong/models/player.dart';
 
 class LeaderBoard extends StatelessWidget {
-  const LeaderBoard({
+  final List<Player> players = PlayerData().player_list;
+
+  LeaderBoard({
     Key? key,
   }) : super(key: key);
 
@@ -21,15 +25,15 @@ class LeaderBoard extends StatelessWidget {
               padding: const EdgeInsets.only(top: 50.0),
               child: buildLeaderboardItem(
                   height: 70,
-                  name: 'Sarah',
-                  image: const AssetImage("assets/profilepic3.jpg"),
+                  name: players[1].name,
+                  image: AssetImage(players[1].profile_photo),
                   score: 2,
                   color: const Color(0xA3A3A3A3)),
             ),
             buildLeaderboardItem(
               height: 100,
-              name: 'Mike',
-              image: const AssetImage("assets/profilepic1.jpg"),
+              name: players[0].name,
+              image: AssetImage(players[0].profile_photo),
               score: 1,
               color: const Color(0xFFF9A428),
             ),
@@ -37,8 +41,8 @@ class LeaderBoard extends StatelessWidget {
               padding: const EdgeInsets.only(top: 50.0),
               child: buildLeaderboardItem(
                 height: 70,
-                name: 'Jane',
-                image: const AssetImage("assets/profilepic4.jpg"),
+                name: players[3].name,
+                image: AssetImage(players[3].profile_photo),
                 score: 3,
                 color: const Color(0xFFB28D62),
               ),

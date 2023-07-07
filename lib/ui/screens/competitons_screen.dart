@@ -64,7 +64,7 @@ class _CompetitonsScreenState extends State<CompetitonsScreen> {
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: competition_data.competition_list.length,
+              itemCount: competition_data.competitionList.length,
               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                   maxCrossAxisExtent: 500,
                   childAspectRatio: 3 / 1,
@@ -72,7 +72,7 @@ class _CompetitonsScreenState extends State<CompetitonsScreen> {
                   mainAxisSpacing: 20),
               itemBuilder: (context, index) {
                 return CompetitonCard(
-                  competition: competition_data.competition_list[index],
+                  competition: competition_data.competitionList[index],
                 );
               },
             ),

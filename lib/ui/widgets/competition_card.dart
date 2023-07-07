@@ -41,7 +41,7 @@ class CompetitonCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      competition.player_1,
+                      competition.player_1.name,
                       style: GoogleFonts.montserrat(
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class CompetitonCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      competition.player_2,
+                      competition.player_2.name,
                       style: GoogleFonts.montserrat(
                         fontSize: 10,
                         fontWeight: FontWeight.bold,

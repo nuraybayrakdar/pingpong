@@ -1,8 +1,10 @@
+import 'package:pingpong/models/player.dart';
+
 class Competition {
   String profile_photo1;
   String profile_photo2;
-  String player_1;
-  String player_2;
+  Player player_1;
+  Player player_2;
   String time;
 
   Competition({

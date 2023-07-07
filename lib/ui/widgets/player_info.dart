@@ -36,7 +36,7 @@ class PlayerInfo extends StatelessWidget {
                 ),
               ),
               Text(
-                '${player.wins} wins ,  ${player.losses} losses',
+                '${player.wins} wins -  ${player.losses} losses',
                 style: GoogleFonts.montserrat(
                     fontSize: 12, color: const Color(0xFFA62EE2)),
               ),
